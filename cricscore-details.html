@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CricScore Details | Live Web App</title>
+    <title>Object Detection Details | Hari Boga</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="details.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
@@ -15,102 +16,83 @@
         </div>
     </nav>
 
-    <header class="project-hero cric-gradient">
-    <span class="category-tag">Live Web Application</span>
-    <h1>CricScore Sport</h1>
-    <p>Real-time Cricket Match Tracking & Scoring</p>
-    
-    <div class="cta-group">
-        <a href="https://cricscoresport01.web.app/" target="_blank" class="btn primary">
-            Launch App ↗
-        </a>
-    </div>
-    <div>
-        <a href="How_to_Use_Local_Cricket_App.pdf" target="_blank" class="btn secondary-outline">
-            <i class="fas fa-file-pdf"></i> How to Use Guide
-        </a>
-    </div>
-</header>
+    <header class="project-hero">
+        <span class="category-tag">Computer Vision</span>
+        <h1>Object Detection & QR System</h1>
+        <p>A Diploma Project in Computer Engineering focusing on Real-time Analysis</p>
+        
+        <div class="cta-group">
+            <a href="obj_report.pdf" target="_blank" class="btn secondary-outline">
+                <i class="fas fa-file-alt"></i> View Full Report
+            </a>
+        </div>
+    </header>
 
     <main class="container">
         
         <section class="detail-section">
-            <h2>The Project Concept</h2>
-            <p><b>CricScore</b> : Track the Action of Your Hometown Cricket Heroes
-Stay connected to every match with CricScore! Get real-time updates, ball-by-ball  and stats for your favorite local teams. Easily manage team rosters, track performances, and relive game highlights—all in one place. Support your local cricket stars with CricScore!
-
-With Cric Score, you can create and manage teams effortlessly. Start by adding teams with unique names to represent each squad. Dive deeper by setting up team rosters that feature your favorite team.
-</p>
+            <div class="section-header">
+                <h2>Project Methodology</h2>
+                <p>The system follows a specific pipeline: Frame Capture → Pre-processing → Model Inference → Label Overlay.</p>
+            </div>
+            
+            <div class="logic-flow">
+                <div class="logic-card">
+                    <h3>System Architecture</h3>
+                    
+                    <img src="flow.jpg" alt="System Flowchart" class="featured-img">
+                    <p class="caption">Technical logic flow from the project's action plan.</p>
+                </div>
+            </div>
         </section>
 
         <section class="detail-section">
-    <div class="section-header">
-        <h2>User Interface Preview</h2>
-        <p>Step-by-step walkthrough of the CricScore application workflow.</p>
-    </div>
-    
-    <div class="vertical-gallery">
-        <div class="gallery-item-full">
-            <img src="cric_imgs/main_scrn.jpeg" alt="CricScore Home Page">
-            <div class="overlay-text">Responsive Dashboard</div>
-        </div>
-        
-        <div class="gallery-item-full">
-            <img src="cric_imgs/create.jpeg" alt="Live Match Screen">
-            <div class="overlay-text">Create match by team1 & team2 Name</div>
-        </div>
-        
-        <div class="gallery-item-full">
-            <img src="cric_imgs/pl_lst.jpeg" alt="Match Details">
-            <div class="overlay-text">Setting up Match details</div>
-        </div>
-        
-        <div class="gallery-item-full">
-            <img src="cric_imgs/pl_lst2.jpeg" alt="Player Names">
-            <div class="overlay-text">Team and Player names</div>
-        </div>
-        
-        <div class="gallery-item-full">
-            <img src="cric_imgs/code_enter.jpeg" alt="Match Tracking">
-            <div class="overlay-text">Enter Code to track Match</div>
-        </div>
-        
-        <div class="gallery-item-full">
-            <img src="obj_detectimgs/sc_brd.jpeg" alt="Scorecard">
-            <div class="overlay-text">ScoreCard Screen</div>
-        </div>
-        
-        <div class="gallery-item-full">
-            <img src="cric_imgs/umpire_board.jpeg" alt="Admin Board">
-            <div class="overlay-text">Real-time Score Updates through Umpire/Admin</div>
-        </div>
-    </div>
-</section>
-
-        <section class="detail-section grid">
-            <div class="card">
-                <h3>Tech Stack</h3>
-                <ul class="tech-list">
-                    <li><strong>Frontend:</strong> Flutter-Dart</li>
-                    <li><strong>Hosting:</strong> Firebase / Web App</li>
-                    <li><strong>Integration:</strong> Real-time Data Sync</li>
-                </ul>
+            <div class="section-header">
+                <h2>Execution & Results</h2>
+                <p>Detailed screenshots of the system performing real-time detection and QR decoding.</p>
             </div>
-            <div class="card">
-                <h3>Key Features</h3>
-                <ul class="tech-list">
-                    <li>Dynamic Score Tracking</li>
-                    <li>Mobile-First Responsive Design</li>
-                    <li>Fast Load Times & Smooth UI</li>
-                    <li>Local Matches Score Tracking</li>
-                </ul>
+
+            <div class="vertical-gallery">
+                <div class="gallery-item-full">
+                    <img src="obj_detectimgs/exec_screen.jpg" alt="Execution Menu">
+                    <div class="overlay-text">Execution & Main Menu Interface</div>
+                </div>
+                
+                <div class="gallery-item-full">
+                    <img src="obj_detectimgs/det_res.jpg" alt="Object Detection Result">
+                    <div class="overlay-text">Real-time Object Detection Result</div>
+                </div>
+
+                <div class="gallery-item-full">
+                    <img src="obj_detectimgs/qr2.jpg" alt="QR Scanning">
+                    <div class="overlay-text">System actively scanning QR code patterns</div>
+                </div>
+
+                <div class="gallery-item-full">
+                    <img src="obj_detectimgs/qr2res.jpg" alt="QR Result">
+                    <div class="overlay-text">Decoded QR Code Output Result</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="detail-section">
+            <div class="card team-card">
+                <h3>Project Team</h3>
+                <div class="team-grid">
+                    <span><strong>Lead:</strong> Shivdatt Vanmane</span>
+                    <span>Hari Boga</span>
+                    <span>Dhanraj Vadisherla</span>
+                    <span>Yadnesh Bhandari</span>
+                    <span>Pankajkumar Yadav</span>
+                </div>
+                <p class="guide"><strong>Under Guidance of:</strong> Prof. Biradar R.Y.</p>
             </div>
         </section>
 
     </main>
 
     <footer>
-        <p>Developed by Shivdatt Vanmane | 2024</p>
+        <p>V.V.P. Polytechnic Solapur | Department of Computer Engineering</p>
     </footer>
 
 </body>

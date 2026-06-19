@@ -1,12 +1,12 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Object Detection Details | Hari Boga</title>
+    <title>FirePro AI Details | AI Surveillance System</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="details.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 
@@ -16,83 +16,117 @@
         </div>
     </nav>
 
-    <header class="project-hero">
-        <span class="category-tag">Computer Vision</span>
-        <h1>Object Detection & QR System</h1>
-        <p>A Diploma Project in Computer Engineering focusing on Real-time Analysis</p>
-        
+    <header class="project-hero cric-gradient">
+        <span class="category-tag">AI Surveillance System</span>
+        <h1>FirePro AI</h1>
+        <p>Real-Time Fire, Smoke & Hazard Detection using YOLOv8</p>
+
         <div class="cta-group">
-            <a href="obj_report.pdf" target="_blank" class="btn secondary-outline">
-                <i class="fas fa-file-alt"></i> View Full Report
+            <a href="fin_rep.pdf" target="_blank" class="btn primary">
+                View Project ↗
             </a>
         </div>
     </header>
 
     <main class="container">
-        
+
         <section class="detail-section">
-            <div class="section-header">
-                <h2>Project Methodology</h2>
-                <p>The system follows a specific pipeline: Frame Capture → Pre-processing → Model Inference → Label Overlay.</p>
-            </div>
-            
-            <div class="logic-flow">
-                <div class="logic-card">
-                    <h3>System Architecture</h3>
-                    
-                    <img src="flow.jpg" alt="System Flowchart" class="featured-img">
-                    <p class="caption">Technical logic flow from the project's action plan.</p>
-                </div>
-            </div>
+            <h2>The Project Concept</h2>
+
+            <p>
+                <b>FirePro AI</b> is an intelligent fire and hazard detection system developed using Python, Flask, OpenCV, YOLOv8, Firebase, and Socket.IO technologies. The system continuously monitors live camera feeds and detects fire, smoke, and human presence in real time using advanced deep learning models.
+            </p>
+
+            <p>
+                The application consists of multiple integrated modules including a Live Monitoring System, Alert Management Module, Snapshot & Recording System, Event Logging Module, and Report Export Module. FirePro AI processes live video streams and instantly identifies hazardous events with confidence scores and severity levels.
+            </p>
+
+            <p>
+                When fire or smoke is detected, the system automatically generates alerts containing object type, confidence score, severity level, timestamp, and captured screenshots. Notifications are sent via email and displayed on a modern monitoring dashboard to enable rapid emergency response.
+            </p>
+
+            <p>
+                The platform also supports event history tracking, Excel report generation, screenshot capture, customizable detection confidence thresholds, alert cooldown settings, and object filtering. FirePro AI provides a smart automated surveillance solution that minimizes human intervention and improves safety in homes, industries, offices, and public environments.
+            </p>
         </section>
 
         <section class="detail-section">
             <div class="section-header">
-                <h2>Execution & Results</h2>
-                <p>Detailed screenshots of the system performing real-time detection and QR decoding.</p>
+                <h2>User Interface Preview</h2>
+                <p>Overview of FirePro AI monitoring and detection workflow.</p>
             </div>
 
             <div class="vertical-gallery">
+
                 <div class="gallery-item-full">
-                    <img src="obj_detectimgs/exec_screen.jpg" alt="Execution Menu">
-                    <div class="overlay-text">Execution & Main Menu Interface</div>
-                </div>
-                
-                <div class="gallery-item-full">
-                    <img src="obj_detectimgs/det_res.jpg" alt="Object Detection Result">
-                    <div class="overlay-text">Real-time Object Detection Result</div>
+                    <img src="firepro_imgs/login.png" alt="Login Screen">
+                    <div class="overlay-text">Secure Admin Login</div>
                 </div>
 
                 <div class="gallery-item-full">
-                    <img src="obj_detectimgs/qr2.jpg" alt="QR Scanning">
-                    <div class="overlay-text">System actively scanning QR code patterns</div>
+                    <img src="firepro_imgs/dashboard.png" alt="Dashboard">
+                    <div class="overlay-text">Real-Time Monitoring Dashboard</div>
                 </div>
 
                 <div class="gallery-item-full">
-                    <img src="obj_detectimgs/qr2res.jpg" alt="QR Result">
-                    <div class="overlay-text">Decoded QR Code Output Result</div>
+                    <img src="firepro_imgs/event_logs.png" alt="Live Detection">
+                    <div class="overlay-text">Live Report Logs</div>
                 </div>
+
+                <div class="gallery-item-full">
+                    <img src="firepro_imgs/email1.jpeg" alt="Alerts">
+                    <div class="overlay-text">Instant Hazard Alert System</div>
+                </div>
+
+                <div class="gallery-item-full">
+                    <img src="firepro_imgs/xl_history.png" alt="History">
+                    <div class="overlay-text">Detection History & Event Logs</div>
+                </div>
+
+                <div class="gallery-item-full">
+                    <img src="firepro_imgs/xl_summary.png" alt="Export Reports">
+                    <div class="overlay-text">Excel Report Generation</div>
+                </div>
+
             </div>
         </section>
 
-        <section class="detail-section">
-            <div class="card team-card">
-                <h3>Project Team</h3>
-                <div class="team-grid">
-                    <span><strong>Lead:</strong> Shivdatt Vanmane</span>
-                    <span>Hari Boga</span>
-                    <span>Dhanraj Vadisherla</span>
-                    <span>Yadnesh Bhandari</span>
-                    <span>Pankajkumar Yadav</span>
-                </div>
-                <p class="guide"><strong>Under Guidance of:</strong> Prof. Biradar R.Y.</p>
+        <section class="detail-section grid">
+
+            <div class="card">
+                <h3>Tech Stack</h3>
+                <ul class="tech-list">
+                    <li><strong>Backend:</strong> Python, Flask</li>
+                    <li><strong>Computer Vision:</strong> OpenCV</li>
+                    <li><strong>AI Model:</strong> YOLOv8</li>
+                    <li><strong>Database:</strong> Firebase Firestore</li>
+                    <li><strong>Realtime:</strong> Socket.IO</li>
+                    <li><strong>Reports:</strong> OpenPyXL Excel Export</li>
+                </ul>
             </div>
+
+            <div class="card">
+                <h3>Key Features</h3>
+                <ul class="tech-list">
+                    <li>Real-Time Fire Detection</li>
+                    <li>Smoke Detection & Monitoring</li>
+                    <li>Human Presence Detection</li>
+                    <li>Automated Email Alerts</li>
+                    <li>Live Camera Surveillance</li>
+                    <li>Detection History Tracking</li>
+                    <li>Screenshot Evidence Capture</li>
+                    <li>Excel Report Export</li>
+                    <li>Configurable Alert Settings</li>
+                    <li>Smart Hazard Surveillance</li>
+                </ul>
+            </div>
+
         </section>
 
     </main>
 
     <footer>
-        <p>V.V.P. Polytechnic Solapur | Department of Computer Engineering</p>
+        <p>Developed by Shivdatt Vanmane | 2026</p>
     </footer>
 
 </body>
