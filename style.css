@@ -1,0 +1,597 @@
+/* ===============================
+   GLOBAL PROFESSIONAL THEME
+   =============================== */
+:root {
+  --bg-main: #020617;            /* Deep Navy */
+  --bg-section: #020617;
+  --bg-card: #020617;
+  --bg-elevated: #020617;
+
+  --text-primary: #e5e7eb;
+  --text-secondary: #94a3b8;
+
+  --accent: #38bdf8;             /* Sky Blue */
+  --accent-hover: #0ea5e9;
+  --accent-soft: rgba(56,189,248,0.15);
+
+  --border-subtle: rgba(148,163,184,0.15);
+  --glass: rgba(255,255,255,0.03);
+}
+
+/* ===============================
+   RESET & BASE
+   =============================== */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background: radial-gradient(circle at top, #020617, #020617);
+  color: var(--text-primary);
+  line-height: 1.75;
+  overflow-x: hidden;
+}
+
+/* ===============================
+   HERO / HEADER
+   =============================== */
+header {
+  background:
+    radial-gradient(circle at top right, rgba(56,189,248,0.15), transparent 60%),
+    linear-gradient(to bottom, #020617, #020617);
+  padding: 130px 20px 90px;
+  text-align: center;
+}
+
+/* ===============================
+   GLASS NAVBAR
+   =============================== */
+.glass-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background: rgba(2,6,23,0.85);
+  backdrop-filter: blur(14px);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 16px 0;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: -0.8px;
+}
+
+.logo span { color: var(--accent); }
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-links a {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: all 0.25s ease;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* ===============================
+   SECTIONS
+   =============================== */
+section {
+  max-width: 1100px;
+  margin: 70px auto;
+  padding: 70px 50px;
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.04),
+    rgba(255,255,255,0.01)
+  );
+  border-radius: 26px;
+  border: 1px solid var(--border-subtle);
+  box-shadow:
+    0 20px 50px rgba(0,0,0,0.45),
+    inset 0 1px 0 rgba(255,255,255,0.04);
+}
+
+/* ===============================
+   GRID & CARDS
+   =============================== */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+  gap: 28px;
+}
+
+.card {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.04),
+    rgba(255,255,255,0.02)
+  );
+  padding: 34px;
+  border-radius: 20px;
+  border: 1px solid var(--border-subtle);
+  transition: all 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  border-color: var(--accent);
+  box-shadow:
+    0 18px 40px rgba(56,189,248,0.25);
+}
+
+/* ===============================
+   FORMS (PREMIUM UX)
+   =============================== */
+input,
+textarea {
+  width: 100%;
+  padding: 15px 16px;
+  margin: 14px 0;
+  background: rgba(0,0,0,0.35);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-primary);
+  border-radius: 12px;
+  font-size: 0.95rem;
+  transition: 0.25s ease;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 4px var(--accent-soft);
+}
+
+/* ===============================
+   BUTTONS
+   =============================== */
+button {
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  color: #020617;
+  padding: 15px 32px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 10px 25px rgba(56,189,248,0.35);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 30px rgba(56,189,248,0.45);
+}
+
+/* ===============================
+   CONTACT SECTION
+   =============================== */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px,1fr));
+  gap: 22px;
+  margin-top: 40px;
+}
+
+.contact-card {
+  text-decoration: none;
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.04),
+    rgba(255,255,255,0.01)
+  );
+  padding: 28px;
+  border-radius: 22px;
+  border: 1px solid var(--border-subtle);
+  transition: 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--accent);
+}
+
+.contact-card i {
+  font-size: 1.9rem;
+  color: var(--accent);
+  margin-bottom: 14px;
+}
+
+/* ===============================
+   RESPONSIVE
+   =============================== */
+@media (max-width: 768px) {
+  section {
+    padding: 42px 24px;
+    margin: 24px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  header {
+    padding: 110px 20px 70px;
+  }
+}
+/* Profile Dashboard Styling */
+.profile-dashboard {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.profile-card {
+    background: var(--bg-card);
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    transition: var(--transition);
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+}
+
+.card-icon {
+    width: 50px;
+    height: 50px;
+    background: rgba(99, 102, 241, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.card-icon i {
+    color: var(--accent);
+    font-size: 1.5rem;
+}
+
+.profile-card h3 {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+    color: var(--text-primary);
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+    padding-left: 15px;
+    border-left: 2px solid var(--accent);
+}
+
+.timeline-item h4 {
+    font-size: 1rem;
+    color: var(--text-primary);
+}
+
+.institution {
+    font-size: 0.9rem;
+    color: var(--accent);
+    font-weight: 600;
+}
+
+.date {
+    font-size: 0.85rem;
+    color: var(--text-dim);
+}
+
+.strength-list {
+    list-style: none;
+}
+
+.strength-list li {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-dim);
+}
+
+.strength-list li i {
+    color: var(--accent);
+}
+
+.profile-footer {
+    text-align: center;
+    margin-top: 40px;
+}
+/* Resume Section Layout */
+.resume-container {
+    max-width: 1100px;
+    margin: 60px auto;
+    background: var(--bg-surface);
+    border-radius: 30px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+}
+
+.resume-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Sidebar Styling */
+.resume-sidebar {
+    flex: 1;
+    min-width: 300px;
+    background: var(--bg-card);
+    padding: 40px;
+    border-right: 1px solid var(--border);
+    text-align: center;
+}
+
+.profile-photo-container {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    border: 4px solid var(--accent-primary);
+    overflow: hidden;
+    box-shadow: 0 10px 30px var(--accent-glow);
+}
+
+.profile-photo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.sidebar-info h2 { font-size: 1.8rem; margin-bottom: 5px; }
+.job-title { color: var(--accent-primary); font-weight: 600; margin-bottom: 30px; }
+
+.contact-links { text-align: left; margin-bottom: 30px; }
+.contact-links a {
+    display: block;
+    color: var(--text-dim);
+    text-decoration: none;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+.contact-links i { color: var(--accent-primary); margin-right: 10px; width: 20px; }
+
+/* Main Content Area */
+.resume-main {
+    flex: 2;
+    padding: 50px;
+    min-width: 350px;
+}
+
+.resume-section { margin-bottom: 40px; }
+.resume-section h3 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 10px;
+}
+
+.resume-item { margin-bottom: 25px; }
+.resume-item h4 { color: var(--text-main); margin-bottom: 5px; }
+.tech-used { color: var(--accent-primary); font-size: 0.85rem; font-weight: 700; margin-bottom: 10px; }
+
+.resume-section ul { padding-left: 20px; color: var(--text-dim); }
+.resume-section ul li { margin-bottom: 8px; font-size: 0.95rem; }
+
+.live-tag {
+    background: #10b981;
+    color: white;
+    font-size: 0.7rem;
+    padding: 2px 8px;
+    border-radius: 10px;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+/* Responsive Fix */
+@media (max-width: 850px) {
+    .resume-wrapper { flex-direction: column; }
+    .resume-sidebar { border-right: none; border-bottom: 1px solid var(--border); }
+}
+/* Address Container Positioning */
+.address-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+/* The Glassmorphism Card */
+.address-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    padding: 15px 25px;
+    border-radius: 100px; /* Capsule shape */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.address-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--accent-primary);
+    box-shadow: 0 15px 35px rgba(99, 102, 241, 0.2);
+}
+
+/* Icon Animation */
+.address-icon {
+    width: 45px;
+    height: 45px;
+    background: var(--accent-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    box-shadow: 0 0 15px var(--accent-glow);
+}
+
+/* Text Hierarchy */
+.address-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.address-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--accent-primary);
+    font-weight: 800;
+}
+
+.address-text {
+    font-size: 0.95rem;
+    color: var(--text-main);
+    font-weight: 500;
+}
+
+/* External Link Style */
+.map-link {
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    transition: 0.3s;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.map-link:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .address-card {
+        border-radius: 20px;
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .address-content { text-align: center; }
+}
+/* Address Container Positioning */
+.address-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+/* The Glassmorphism Card */
+.address-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    padding: 15px 25px;
+    border-radius: 100px; /* Capsule shape */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.address-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.05);
+    border-color: var(--accent-primary);
+    box-shadow: 0 15px 35px rgba(99, 102, 241, 0.2);
+}
+
+/* Icon Animation */
+.address-icon {
+    width: 45px;
+    height: 45px;
+    background: var(--accent-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    box-shadow: 0 0 15px var(--accent-glow);
+}
+
+/* Text Hierarchy */
+.address-content {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.address-label {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--accent-primary);
+    font-weight: 800;
+}
+
+.address-text {
+    font-size: 0.95rem;
+    color: var(--text-main);
+    font-weight: 500;
+}
+
+/* External Link Style */
+.map-link {
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    transition: 0.3s;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.map-link:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .address-card {
+        border-radius: 20px;
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+    .address-content { text-align: center; }
+}

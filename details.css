@@ -1,0 +1,151 @@
+/* ===============================
+   PROFESSIONAL CASE-STUDY THEME
+   =============================== */
+
+:root {
+    --accent: #38bdf8;            /* Sky Blue */
+    --accent-soft: rgba(56,189,248,0.15);
+    --bg-main: #0f172a;           /* Slate Dark */
+    --bg-card: #020617;           /* Deep Navy */
+    --bg-elevated: #020617;
+    --text-primary: #e5e7eb;      /* Light Gray */
+    --text-secondary: #94a3b8;    /* Muted */
+    --border-subtle: rgba(148,163,184,0.15);
+}
+
+/* ===============================
+   CATEGORY / TAG
+   =============================== */
+.category-tag {
+    display: inline-block;
+    background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+    color: #020617;
+    padding: 6px 18px;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    box-shadow: 0 6px 20px rgba(56,189,248,0.35);
+}
+
+/* ===============================
+   FEATURED IMAGE
+   =============================== */
+.featured-img {
+    width: 100%;
+    max-width: 780px;
+    border-radius: 14px;
+    margin: 30px auto;
+    display: block;
+    background: #ffffff;
+    border: 1px solid var(--border-subtle);
+    box-shadow: 0 25px 60px rgba(0,0,0,0.45);
+}
+
+/* ===============================
+   VERTICAL GALLERY
+   =============================== */
+.vertical-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 24px;
+}
+
+/* ===============================
+   GALLERY CARD
+   =============================== */
+.gallery-item-full {
+    background: linear-gradient(
+        180deg,
+        rgba(255,255,255,0.03),
+        rgba(255,255,255,0.01)
+    );
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--border-subtle);
+    box-shadow:
+        0 10px 30px rgba(0,0,0,0.35),
+        inset 0 1px 0 rgba(255,255,255,0.04);
+}
+
+/* IMAGE */
+.gallery-item-full img {
+    width: 100%;
+    max-height: 75vh;
+    object-fit: contain;
+    background: #020617;
+    display: block;
+}
+
+/* ===============================
+   IMAGE DESCRIPTION / OVERLAY
+   =============================== */
+.gallery-item-full .overlay-text {
+    background: linear-gradient(135deg, #020617, #020617);
+    color: var(--text-primary);
+    padding: 18px 26px;
+    text-align: center;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    border-top: 1px solid var(--border-subtle);
+    letter-spacing: 0.2px;
+}
+
+/* ===============================
+   TEAM / CONTRIBUTORS SECTION
+   =============================== */
+.team-card {
+    background: linear-gradient(
+        180deg,
+        rgba(56,189,248,0.05),
+        rgba(255,255,255,0.02)
+    );
+    border: 1px solid var(--border-subtle);
+    text-align: center;
+    padding: 36px;
+    border-radius: 18px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 18px;
+    margin: 28px 0;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+/* ===============================
+   GUIDE / FOOTER NOTE
+   =============================== */
+.guide {
+    border-top: 1px solid var(--border-subtle);
+    padding-top: 18px;
+    margin-top: 18px;
+    color: var(--accent);
+    font-weight: 600;
+    letter-spacing: 0.3px;
+}
+
+/* ===============================
+   RESPONSIVE TUNING
+   =============================== */
+@media (max-width: 768px) {
+    .vertical-gallery {
+        max-width: 100%;
+        margin: 40px auto;
+    }
+
+    .gallery-item-full img {
+        max-height: 60vh;
+    }
+
+    .team-card {
+        padding: 28px 22px;
+    }
+}
