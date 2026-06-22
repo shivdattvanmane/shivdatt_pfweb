@@ -3,328 +3,296 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name | CSE Graduate Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Shivdatt Vanmane | CSE Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <nav class="glass-nav">
-    <div class="nav-container">
-        <a href="index.html" class="logo">
-            <i class="fas fa-code"></i> SV<span>.</span>
-        </a>
-
-        <div class="nav-links">
-    <a href="#profile-page"><i class="fas fa-id-card"></i> Profile</a>
-    <a href="#projects"><i class="fas fa-laptop-code"></i> Projects</a>
-    <a href="#about"><i class="fas fa-user-tie"></i> About</a>
-    <a href="#contact"><i class="fas fa-paper-plane"></i> Contact</a>
-</div>
-
-        <div class="mobile-menu-icon">
-            <i class="fas fa-bars"></i>
-        </div>
+    <div class="custom-cursor" id="cursor" aria-hidden="true"></div>
+    <div class="loader" aria-hidden="true">
+        <div class="loader-bar" id="loader-bar"></div>
     </div>
-</nav>
 
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm <span class="highlight">Shivdatt Anil Vanmane</span></h1>
-            <p class="subtitle">Computer Science & Engineering Graduate</p>
-            <p class="tagline">Building scalable software and modern web experiences.</p>
-            <div class="cta-group">
-                <a href="#contact" class="btn primary" style="color: blue;">Hire Me ↗</a>
-                <a href="#projects" class="btn secondary" style="color: blue;">View Work ↗</a>
+    <nav class="top-nav">
+        <div class="nav-container">
+            <a href="#home" class="brand">SV<span>_</span></a>
+            <div class="nav-links" aria-label="Primary navigation">
+                <a href="#home" class="active">Home</a>
+                <a href="#work">Work</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
             </div>
+            <a href="#contact" class="nav-cta">Hire Me</a>
+            <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+                <i class="fas fa-bars"></i>
+            </button>
         </div>
-    </header>
+    </nav>
 
-    <main class="container">
-         <section id="profile-page" class="resume-container">
-    <div class="resume-wrapper">
-        
-        <aside class="resume-sidebar">
-            <div class="profile-photo-container">
-                <img src="profile_picture.png" alt="Shivdatt Vanmane" class="profile-photo">
+    <main>
+        <section class="hero hero-3d-scene" id="home">
+            <div class="hero-bg-panel panel-left" aria-hidden="true"></div>
+            <div class="hero-bg-panel panel-right" aria-hidden="true"></div>
+            <div class="hero-content parallax-layer" id="hero-content">
+                <span class="eyebrow">Solapur, India - Available for Internship</span>
+                <h1>Building practical software with AI, web, and product depth.</h1>
+                <p>
+                    I am Shivdatt Anil Vanmane, a Computer Engineering student focused on real-time systems,
+                    computer vision, Flutter apps, and modern web experiences.
+                </p>
+                <div class="hero-actions">
+                    <a href="#work" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-ghost">Get In Touch</a>
+                </div>
             </div>
-            
-            <div class="sidebar-info">
-                <h2>Shivdatt Vanmane</h2>
-                <p class="job-title">Computer Engineering Student</p>
-                
-                <div class="contact-links">
-                    <a href="tel:+918010XXXX03"><i class="fas fa-phone"></i> 8010XXXX03</a>
-                    <a href="mailto:shivdattvanmane@gmail.com"><i class="fas fa-envelope"></i> shivdattvanmane@gmail.com</a>
-                    <a href="https://www.linkedin.com/in/shivdatt-vanmane-409aa8337" target="_blank"><i class="fab fa-linkedin"></i>Shivdatt Vanmane</a>
-                    <a href="https://github.com/shivdattvanmane" target="_blank"><i class="fab fa-github"></i>Shivdatt Vanmane</a>
+
+            <aside class="hero-card glass-panel" aria-label="Profile summary">
+                <div class="profile-orbit">
+                    <img src="profile_picture.png" alt="Shivdatt Vanmane" class="hero-photo">
+                </div>
+                <div>
+                    <span class="label">Current Focus</span>
+                    <h2>Computer Engineering Student</h2>
+                    <p>AI object detection, Firebase apps, clean web interfaces, and deployment-ready projects.</p>
+                </div>
+                <div class="hero-stats">
+                    <div>
+                        <strong>90.23%</strong>
+                        <span>Diploma</span>
+                    </div>
+                    <div>
+                        <strong>8.3</strong>
+                        <span>B.Tech CGPA</span>
+                    </div>
+                </div>
+            </aside>
+        </section>
+
+        <section class="section work-section" id="work">
+            <div class="section-heading">
+                <div>
+                    <span class="label">Featured Work</span>
+                    <h2>Projects engineered for real-world use.</h2>
+                </div>
+                <span class="timeline">2024 - 2026</span>
+            </div>
+
+            <div class="project-bento">
+                <article class="project-card project-wide glass-panel">
+                    <img src="fire_logo.png" alt="FirePro AI logo and system preview">
+                    <div class="project-overlay">
+                        <span>01 / AI Surveillance</span>
+                        <h3>FirePro AI</h3>
+                        <p>Real-time fire, smoke, and hazard detection with YOLOv8, Flask, OpenCV, Firebase, and alert automation.</p>
+                        <a href="fireproai.html">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="project-card glass-panel">
+                    <img src="cricscore-preview.jpg" alt="CricScore web app preview">
+                    <div class="project-overlay">
+                        <span>02 / Web App</span>
+                        <h3>CricScore Sport</h3>
+                        <p>Live cricket scoring and match tracking for local sports communities.</p>
+                        <a href="cricscore-details.html">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="project-card glass-panel">
+                    <img src="obj_img.jpg" alt="Object detection project preview">
+                    <div class="project-overlay">
+                        <span>03 / Computer Vision</span>
+                        <h3>Object Detection & QR</h3>
+                        <p>Python and OpenCV pipeline for real-time object detection and QR decoding.</p>
+                        <a href="object-details.html">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+
+                <article class="project-card project-wide glass-panel">
+                    <img src="flow.jpg" alt="System architecture flowchart">
+                    <div class="project-overlay">
+                        <span>04 / System Design</span>
+                        <h3>Detection Pipeline</h3>
+                        <p>Frame capture, preprocessing, model inference, label overlay, and reporting workflow.</p>
+                        <a href="obj_report.pdf" target="_blank" rel="noreferrer">View Report <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section about-section" id="about">
+            <div class="about-grid">
+                <div class="portrait-panel glass-panel">
+                    <img src="profile_picture.png" alt="Portrait of Shivdatt Vanmane">
+                    <div class="cert-badge">CSE<br>Portfolio</div>
                 </div>
 
-                <div class="sidebar-section">
+                <div class="about-copy">
+                    <span class="label">About Me</span>
+                    <h2>Focused on useful products, clean logic, and steady growth.</h2>
+                    <p>
+                        I am a Computer Engineering student with hands-on experience in AI-based object detection,
+                        full-stack web development, Flutter applications, Firebase, and database-backed workflows.
+                    </p>
+                    <p>
+                        I enjoy analyzing problems deeply and writing maintainable code for practical solutions.
+                        My goal is to join an environment where I can apply my skills, learn from experienced
+                        teams, and contribute to production-quality software.
+                    </p>
+                    <div class="metric-row">
+                        <div>
+                            <strong>3+</strong>
+                            <span>Major Projects</span>
+                        </div>
+                        <div>
+                            <strong>6+</strong>
+                            <span>Core Skills</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section resume-section" id="profile-page">
+            <div class="section-heading centered">
+                <span class="label">Profile</span>
+                <h2>Education and technical strengths.</h2>
+            </div>
+
+            <div class="resume-grid">
+                <article class="glass-panel info-card">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h3>Education</h3>
+                    <div class="timeline-list">
+                        <div>
+                            <span>2022</span>
+                            <strong>D.R. Shriram English Medium School</strong>
+                            <p>SSC Board, Maharashtra - 72.40%</p>
+                        </div>
+                        <div>
+                            <span>2022 - 2025</span>
+                            <strong>V.V.P. Polytechnic, Solapur</strong>
+                            <p>Diploma in Computer Engineering - 90.23%</p>
+                        </div>
+                        <div>
+                            <span>2025 - 2028</span>
+                            <strong>N.K Orchid College of Engineering and Technology</strong>
+                            <p>B.Tech in Computer Engineering - CGPA 8.3</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="glass-panel info-card">
+                    <i class="fas fa-code"></i>
+                    <h3>Technical Skills</h3>
+                    <div class="skill-cloud">
+                        <span>C</span>
+                        <span>C++</span>
+                        <span>Java</span>
+                        <span>Python</span>
+                        <span>Dart</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>Flutter</span>
+                        <span>YOLOv8</span>
+                        <span>OpenCV</span>
+                        <span>Firebase</span>
+                        <span>MySQL</span>
+                    </div>
+                </article>
+
+                <article class="glass-panel info-card">
+                    <i class="fas fa-bullseye"></i>
                     <h3>Strengths</h3>
-                    <ul class="pill-list">
-                        <li>Problem Solving</li>
-                        <li>Quick Learner</li>
-                        <li>Teamwork</li>
+                    <ul class="clean-list">
+                        <li>Problem solving with practical implementation.</li>
+                        <li>Quick learner across web, AI, and app stacks.</li>
+                        <li>Comfortable working independently and in teams.</li>
+                        <li>Open to feedback and continuous improvement.</li>
                     </ul>
-                </div>
-            </div>
-        </aside>
-
-        <div class="resume-main">
-            
-            <div class="resume-section">
-                <h3><i class="fas fa-bullseye"></i> Career Objective</h3>
-                <p>Motivated Computer Engineering student with hands-on experience in AI-based object detection, full-stack web development, and Flutter applications. Seeking an internship/entry-level role to apply technical skills in building real-world scalable solutions.</p>
-            </div>
-
-            <div class="resume-section">
-                <h3><i class="fas fa-graduation-cap"></i> Education</h3>
-                <div class="resume-item">
-                    <h4>Schooling</h4>
-                    <p class="location">D.R Shriram English Meduim school,Solapur | 2022 passout</p>
-                    <p class="score">Percentage: 72.40% / SSC boards(Maharashtra)</p>
-                    <h4>Diploma in Computer Engineering</h4>
-                    <p class="location">V.V.P. Polytechnic, Solapur | 2022 — 2025</p>
-                    <p class="score">Percentage: 90.23%</p>
-                    <h4>B Tech in Computer Engineering</h4>
-                    <p class="location">N.K Orchid College of Engineering and Technology, Solapur | 2025 — 2028</p>
-                    <p class="score">CGPA: 8.3</p>
-                </div>
-            </div>
-
-            <div class="resume-section">
-                <h3><i class="fas fa-code"></i> Technical Skills</h3>
-                <div class="skills-grid">
-                    <div class="skill-category"><strong>Languages:</strong> C, C++, Java, Python, Dart</div>
-                    <div class="skill-category"><strong>Web:</strong> HTML5, CSS3, JavaScript</div>
-                    <div class="skill-category"><strong>AI/CV:</strong> YOLOv8, OpenCV</div>
-                    <div class="skill-category"><strong>Database:</strong> Firebase, MySQL</div>
-                </div>
-            </div>
-
-            <div class="resume-section">
-                <h3><i class="fas fa-project-diagram"></i> Highlight Projects</h3>
-                
-                <div class="resume-item">
-                    <h4>🏏 Cric Score Web App <span class="live-tag">Live</span></h4>
-                    <p class="tech-used">Flutter, Firebase, Web</p>
-                    <ul>
-                        <li>Developed real-time ball-by-ball scoring for local matches.</li>
-                        <li>Automated match summaries and international score tracking.</li>
-                    </ul>
-                </div>
-
-                <div class="resume-item">
-                    <h4>🤖 AI Object Detection & Security</h4>
-                    <p class="tech-used">Python, YOLOv8, OpenCV</p>
-                    <ul>
-                        <li>Real-time human detection with midnight monitoring alerts.</li>
-                        <li>Implemented fire and weapon detection for high-end security.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-        <section id="about">
-            <div class="section-header">
-                <h2>About Me</h2>
-                <div class="underline"></div>
-            </div>
-            <p>I am a Computer Science and Engineering graduate with a strong interest in software development, 
-                problem-solving, and building practical technology-based solutions. 
-                I believe in learning by doing, which is why I actively work on real-world projects that help me understand concepts beyond textbooks. 
-                During my academic journey, I developed a solid foundation in programming languages such as C, C++, Java, and Python, along with a good understanding of data structures, algorithms, and database management systems. 
-                I also explored web and application development using HTML, CSS, JavaScript, Flutter, and modern frameworks, which helped me gain hands-on experience in designing user-friendly and efficient applications.
-
-I consider myself a disciplined, focused, and continuously improving individual. Rather than rushing for results, I prefer writing clean, logical, and maintainable code. I enjoy analyzing problems deeply and finding optimized solutions, whether it is in backend logic or frontend design. I am comfortable working independently as well as in a team environment, where I value clear communication and collaborative learning. I am always open to feedback, as I believe it plays a crucial role in personal and professional growth. As a fresher, my goal is to work in an environment where I can apply my technical knowledge, learn from experienced professionals, and contribute meaningfully to organizational goals while steadily growing as a software engineer.
-
-        <section id="skills">
-            <div class="section-header">
-                <h2>Technical Skills</h2>
-            </div>
-            <div class="grid">
-                <div class="skill-pill">C / C++</div>
-                <div class="skill-pill">Java</div>
-                <div class="skill-pill">Python</div>
-                <div class="skill-pill">DSA</div>
-                <div class="skill-pill">HTML/CSS/JS</div>
-                <div class="skill-pill">Flutter</div>
-                <!-- <div class="skill-pill">SQL</div>
-                <div class="skill-pill">GitHub</div> -->
+                </article>
             </div>
         </section>
 
-       
-        <section id="projects">
-            <div class="section-header">
-                <h2>Featured Projects</h2>
+        <section class="section expertise-section">
+            <div class="section-heading centered">
+                <span class="label">Core Expertise</span>
+                <h2>What I can build.</h2>
             </div>
-            <div class="project-grid">
-                <section id="projects">
-    
-    <div class="project-grid">
-        <article class="card">
-            <div class="project-img-container">
-                <img src="obj_img.jpg" height="100" width="100" alt="Object Detection Preview" class="project-img">
-            </div>
-            <div class="project-info">
-                <h3>Object Detection & QR Scanner</h3>
-                <p class="project-intro">A real-time system using <strong>Python, OpenCV, and TensorFlow</strong> to identify objects and decode QR codes instantly.</p>
-                <div class="tech-tags">
-                    <span class="tech-tag">Python</span>
-                    <span class="tech-tag">OpenCV</span>
-                </div>
-                <a href="object-details.html" class="btn-text">View Full Project & Screenshots →</a>
-            </div>
-        </article>
 
-        <article class="card">
-            <div class="project-img-container">
-                <img src="cricscore-preview.jpg" height="100" width="100" alt="CricScore Web App" class="project-img">
-            </div>
-            <div class="project-info">
-                <h3>CricScore Sport</h3>
-                <p>A real-time cricket scoring web application built for sports enthusiasts to track live matches.</p>
-                <div class="tech-tags">
-                    <span class="tech-tag">Web App</span>
-                    <span class="tech-tag">Firebase</span>
-                </div>
-                <a href="cricscore-details.html" class="btn-text">View Full Project Details →</a>
-                <br>
-                <hr>
-                <a href="https://cricscoresport01.web.app/" target="_blank" class="btn-text">Launch Live App ↗</a>
-            </div>
-        </article>
-        <article class="card">
-            <div class="project-img-container">
-                <img src="obj_img.jpg" height="100" width="100" alt="Object Detection Preview" class="project-img">
-            </div>
-            <div class="project-info">
-                <h3>FIREPRO AI : Intelligent Real-Time Fire Detection and Smart Surveillance System</h3>
-                <p class="project-intro">
-    An intelligent fire and hazard detection system built using 
-    <strong>Python, Flask, OpenCV, YOLOv8, and Firebase</strong> 
-    for real-time surveillance, fire/smoke detection, automated alerts, 
-    event logging, and safety monitoring through live camera feeds.
-</p>
-
-<div class="tech-tags">
-    <span class="tech-tag">Python</span>
-    <span class="tech-tag">Flask</span>
-    <span class="tech-tag">OpenCV</span>
-    <span class="tech-tag">YOLOv8</span>
-    <span class="tech-tag">Firebase</span>
-    <span class="tech-tag">Socket.IO</span>
-</div><a href="object-details.html" class="btn-text">View Full Project & Screenshots →</a>
-            </div>
-        </article>
-    </div>
-</section>     
+            <div class="expertise-grid">
+                <article class="glass-panel service-card">
+                    <i class="fas fa-eye"></i>
+                    <h3>Computer Vision</h3>
+                    <p>Object detection, QR scanning, YOLOv8 workflows, OpenCV processing, and visual monitoring.</p>
+                </article>
+                <article class="glass-panel service-card">
+                    <i class="fas fa-window-restore"></i>
+                    <h3>Web Interfaces</h3>
+                    <p>Responsive portfolio pages, dashboards, forms, interaction states, and clean visual systems.</p>
+                </article>
+                <article class="glass-panel service-card">
+                    <i class="fas fa-mobile-screen"></i>
+                    <h3>App Development</h3>
+                    <p>Flutter and Firebase applications with real-time data, authentication, and useful workflows.</p>
+                </article>
             </div>
         </section>
 
-        <div class="form-wrapper">
-            <section id="feedback" class="form-container">
-                <h2>User Feedback</h2>
-                <form id="feedbackForm">
-                    <input type="text" name="name" placeholder="Name" required>
-                    <input type="text" name="city" placeholder="City" required>
-                    <textarea name="feedback" rows="4" placeholder="Your Feedback" required></textarea>
-                    <button type="submit">Submit Feedback</button>
-                </form>
-                <p id="feedbackMsg" class="status-msg"></p>
-            </section>
+        <section class="section contact-section" id="contact">
+            <div class="contact-header">
+                <span class="label">Let's Connect</span>
+                <h2>Ready for internships, projects, and collaboration.</h2>
+                <p>Reach out for job opportunities, project discussions, or feedback on the portfolio.</p>
+            </div>
 
-            <section id="hr" class="form-container">
-                <h2>HR / Job Inquiries</h2>
-                <form id="hrForm">
-                    <input type="text" name="hrname" placeholder="HR Name" required>
-                    <input type="email" name="email" placeholder="Company Email" required>
-                    <input type="text" name="company" placeholder="Company Name" required>
-                    <textarea name="message" rows="4" placeholder="Job / Internship Message" required></textarea>
-                    <button type="submit">Send Request</button>
-                </form>
-                <p id="hrMsg" class="status-msg"></p>
-            </section>
-        </div>
+            <div class="contact-layout">
+                <div class="glass-panel contact-panel">
+                    <a href="mailto:shivdattvanmane@gmail.com"><i class="fas fa-envelope"></i> shivdattvanmane@gmail.com</a>
+                    <a href="tel:+918010000003"><i class="fas fa-phone"></i> +91 8010XXXX03</a>
+                    <a href="https://www.linkedin.com/in/shivdatt-vanmane-409aa8337" target="_blank" rel="noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <a href="https://github.com/shivdattvanmane" target="_blank" rel="noreferrer"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.instagram.com/shivdattvanmane_1095" target="_blank" rel="noreferrer"><i class="fab fa-instagram"></i> Instagram</a>
+                    <div class="location-chip"><i class="fas fa-location-dot"></i> Solapur, India</div>
+                </div>
+
+                <div class="forms-stack">
+                    <form class="glass-panel contact-form" id="feedbackForm">
+                        <h3>User Feedback</h3>
+                        <input type="text" name="name" placeholder="Name" required>
+                        <input type="text" name="city" placeholder="City" required>
+                        <textarea name="feedback" rows="4" placeholder="Your feedback" required></textarea>
+                        <button type="submit">Submit Feedback</button>
+                        <p id="feedbackMsg" class="status-msg"></p>
+                    </form>
+
+                    <form class="glass-panel contact-form" id="hrForm">
+                        <h3>HR / Job Inquiries</h3>
+                        <input type="text" name="hrname" placeholder="HR name" required>
+                        <input type="email" name="email" placeholder="Company email" required>
+                        <input type="text" name="company" placeholder="Company name" required>
+                        <textarea name="message" rows="4" placeholder="Job or internship message" required></textarea>
+                        <button type="submit">Send Request</button>
+                        <p id="hrMsg" class="status-msg"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer id="contact">
-        <div class="footer-content">
-            <section id="contact" class="contact-section">
-    <div class="container">
-        <div class="section-header">
-            <span class="subtitle">Get in Touch</span>
-            <h2>Let's Connect</h2>
-            <div class="underline"></div>
-            <p>I'm currently looking for new opportunities. Whether you have a question or just want to say hi, my inbox is always open!</p>
+    <footer class="site-footer">
+        <a href="#home" class="brand">SV<span>_</span></a>
+        <div class="footer-links">
+            <a href="mailto:shivdattvanmane@gmail.com">Email</a>
+            <a href="https://github.com/shivdattvanmane" target="_blank" rel="noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/shivdatt-vanmane-409aa8337" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="#home">Back to Top</a>
         </div>
-
-        <div class="contact-grid">
-            <a href="mailto:shivdattvanmane@gmail.com" class="contact-card">
-                <div class="icon-box">
-                    <i class="fas fa-envelope"></i>
-                </div>
-                <h3>Email</h3>
-                <p>shivdattvanmane@gmail.com</p>
-                <p></p>
-            </a>
-
-                    <a href="https://www.linkedin.com/in/shivdatt-vanmane-409aa8337" target="_blank" class="contact-card">
-        <div class="icon-box">
-            <i class="fab fa-linkedin-in"></i>
-        </div>
-        <h3>LinkedIn</h3>
-        <p>Shivdatt Vanmane</p>
-    </a>
-        <a href="https://github.com/shivdattvanmane" target="_blank" class="contact-card">
-    <div class="icon-box">
-        <i class="fab fa-github"></i>
-    </div>
-    <h3>GitHub</h3>
-    <p>Check out my Repositories</p>
-</a>
-
-            <a href="tel:+918010000003" class="contact-card">
-                <div class="icon-box">
-                    <i class="fas fa-phone-alt"></i>
-                </div>
-                <h3>Call Me</h3>
-                <p>+91 8010XXXX03</p>
-            </a>
-
-            <a href="https://www.instagram.com/shivdattvanmane_1095" target="_blank" class="contact-card">
-                <div class="icon-box">
-                    <i class="fab fa-instagram"></i>
-                </div>
-                <h3>Instagram</h3>
-                <p>shivdattvanmane@_1095</p>
-            </a>
-        </div>
-
-        <div class="address-container">
-    <div class="address-card">
-        <div class="address-icon">
-            <i class="fas fa-map-location-dot"></i>
-        </div>
-        <div class="address-content">
-            <span class="address-label">Location</span>
-            <span class="address-text">123 Silver Street, ABC Lane, Solapur, India</span>
-        </div>
-        <a href="https://maps.google.com" target="_blank" class="map-link" title="Open in Maps">
-            <i class="fas fa-arrow-up-right-from-square"></i>
-        </a>
-    </div>
-</div>
-</section>
-            </div>
-            <p class="copyright">&copy; 2024 . Shivdatt Anil Vanmane All rights reserved.</p>
-        </div>
+        <p>&copy; 2026 Shivdatt Anil Vanmane. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>

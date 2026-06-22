@@ -1,133 +1,101 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FirePro AI Details | AI Surveillance System</title>
+    <title>Object Detection & QR System | Shivdatt Vanmane</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="details.css">
 </head>
-<body>
+<body class="detail-body">
+    <div class="custom-cursor" id="cursor" aria-hidden="true"></div>
+    <div class="loader" aria-hidden="true"><div class="loader-bar" id="loader-bar"></div></div>
 
-    <nav>
-        <div class="nav-container">
-            <a href="index.html" class="logo">← Back to Portfolio</a>
+    <nav class="detail-nav">
+        <div class="detail-nav-inner">
+            <a href="index.html#work" class="back-link"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+            <a href="index.html#contact" class="nav-cta">Hire Me</a>
         </div>
     </nav>
 
-    <header class="project-hero cric-gradient">
-        <span class="category-tag">AI Surveillance System</span>
-        <h1>FirePro AI</h1>
-        <p>Real-Time Fire, Smoke & Hazard Detection using YOLOv8</p>
-
-        <div class="cta-group">
-            <a href="fin_rep.pdf" target="_blank" class="btn primary">
-                View Project ↗
-            </a>
+    <header class="detail-hero">
+        <div class="detail-copy">
+            <span class="case-label">03 / Computer Vision</span>
+            <h1>Object Detection & QR System</h1>
+            <p>
+                A diploma project focused on real-time visual analysis using Python, OpenCV, TensorFlow-style
+                detection workflows, and QR decoding for practical security and automation use cases.
+            </p>
+            <div class="detail-actions">
+                <a href="obj_report.pdf" target="_blank" rel="noreferrer" class="primary-action">View Report <i class="fas fa-arrow-up-right-from-square"></i></a>
+                <a href="#gallery" class="ghost-action">View Results <i class="fas fa-arrow-down"></i></a>
+            </div>
+        </div>
+        <div class="detail-visual">
+            <img src="obj_img.jpg" alt="Object detection project preview">
         </div>
     </header>
 
-    <main class="container">
-
-        <section class="detail-section">
-            <h2>The Project Concept</h2>
-
+    <main class="detail-main">
+        <section class="case-section">
+            <h2>Project Methodology</h2>
             <p>
-                <b>FirePro AI</b> is an intelligent fire and hazard detection system developed using Python, Flask, OpenCV, YOLOv8, Firebase, and Socket.IO technologies. The system continuously monitors live camera feeds and detects fire, smoke, and human presence in real time using advanced deep learning models.
-            </p>
-
-            <p>
-                The application consists of multiple integrated modules including a Live Monitoring System, Alert Management Module, Snapshot & Recording System, Event Logging Module, and Report Export Module. FirePro AI processes live video streams and instantly identifies hazardous events with confidence scores and severity levels.
-            </p>
-
-            <p>
-                When fire or smoke is detected, the system automatically generates alerts containing object type, confidence score, severity level, timestamp, and captured screenshots. Notifications are sent via email and displayed on a modern monitoring dashboard to enable rapid emergency response.
-            </p>
-
-            <p>
-                The platform also supports event history tracking, Excel report generation, screenshot capture, customizable detection confidence thresholds, alert cooldown settings, and object filtering. FirePro AI provides a smart automated surveillance solution that minimizes human intervention and improves safety in homes, industries, offices, and public environments.
+                The system follows a clear pipeline: frame capture, preprocessing, model inference,
+                object label overlay, QR scan extraction, and result presentation through a simple execution interface.
             </p>
         </section>
 
-        <section class="detail-section">
-            <div class="section-header">
-                <h2>User Interface Preview</h2>
-                <p>Overview of FirePro AI monitoring and detection workflow.</p>
-            </div>
-
-            <div class="vertical-gallery">
-
-                <div class="gallery-item-full">
-                    <img src="firepro_imgs/login.png" alt="Login Screen">
-                    <div class="overlay-text">Secure Admin Login</div>
+        <section class="case-section case-grid">
+            <article class="case-card glass-panel">
+                <h3>System Flow</h3>
+                <img src="flow.jpg" alt="System architecture flowchart">
+            </article>
+            <article class="case-card glass-panel">
+                <h3>Project Team</h3>
+                <p class="section-intro">Developed as a diploma project under the guidance of Prof. Biradar R.Y.</p>
+                <div class="team-strip">
+                    <span>Shivdatt Vanmane</span>
+                    <span>Hari Boga</span>
+                    <span>Dhanraj Vadisherla</span>
+                    <span>Yadnesh Bhandari</span>
+                    <span>Pankajkumar Yadav</span>
                 </div>
-
-                <div class="gallery-item-full">
-                    <img src="firepro_imgs/dashboard.png" alt="Dashboard">
-                    <div class="overlay-text">Real-Time Monitoring Dashboard</div>
-                </div>
-
-                <div class="gallery-item-full">
-                    <img src="firepro_imgs/event_logs.png" alt="Live Detection">
-                    <div class="overlay-text">Live Report Logs</div>
-                </div>
-
-                <div class="gallery-item-full">
-                    <img src="firepro_imgs/email1.jpeg" alt="Alerts">
-                    <div class="overlay-text">Instant Hazard Alert System</div>
-                </div>
-
-                <div class="gallery-item-full">
-                    <img src="firepro_imgs/xl_history.png" alt="History">
-                    <div class="overlay-text">Detection History & Event Logs</div>
-                </div>
-
-                <div class="gallery-item-full">
-                    <img src="firepro_imgs/xl_summary.png" alt="Export Reports">
-                    <div class="overlay-text">Excel Report Generation</div>
-                </div>
-
-            </div>
+            </article>
         </section>
 
-        <section class="detail-section grid">
-
-            <div class="card">
-                <h3>Tech Stack</h3>
-                <ul class="tech-list">
-                    <li><strong>Backend:</strong> Python, Flask</li>
-                    <li><strong>Computer Vision:</strong> OpenCV</li>
-                    <li><strong>AI Model:</strong> YOLOv8</li>
-                    <li><strong>Database:</strong> Firebase Firestore</li>
-                    <li><strong>Realtime:</strong> Socket.IO</li>
-                    <li><strong>Reports:</strong> OpenPyXL Excel Export</li>
-                </ul>
+        <section class="case-section" id="gallery">
+            <h2>Execution & Results</h2>
+            <p class="section-intro">Screens from the object detection and QR decoding workflow.</p>
+            <div class="gallery-grid">
+                <figure class="gallery-item glass-panel">
+                    <img src="obj_detectimgs/exec_screen.jpg" alt="Execution menu interface">
+                    <figcaption>Execution and main menu interface</figcaption>
+                </figure>
+                <figure class="gallery-item glass-panel">
+                    <img src="obj_detectimgs/det_res.jpg" alt="Object detection result">
+                    <figcaption>Real-time object detection result</figcaption>
+                </figure>
+                <figure class="gallery-item glass-panel">
+                    <img src="obj_detectimgs/qr2.jpg" alt="QR scanning input">
+                    <figcaption>QR scanning input</figcaption>
+                </figure>
+                <figure class="gallery-item glass-panel">
+                    <img src="obj_detectimgs/qr2res.jpg" alt="QR code decoded output">
+                    <figcaption>Decoded QR code output</figcaption>
+                </figure>
             </div>
-
-            <div class="card">
-                <h3>Key Features</h3>
-                <ul class="tech-list">
-                    <li>Real-Time Fire Detection</li>
-                    <li>Smoke Detection & Monitoring</li>
-                    <li>Human Presence Detection</li>
-                    <li>Automated Email Alerts</li>
-                    <li>Live Camera Surveillance</li>
-                    <li>Detection History Tracking</li>
-                    <li>Screenshot Evidence Capture</li>
-                    <li>Excel Report Export</li>
-                    <li>Configurable Alert Settings</li>
-                    <li>Smart Hazard Surveillance</li>
-                </ul>
-            </div>
-
         </section>
-
     </main>
 
-    <footer>
-        <p>Developed by Shivdatt Vanmane | 2026</p>
+    <footer class="site-footer">
+        <a href="index.html" class="brand">SV<span>_</span></a>
+        <p>V.V.P. Polytechnic Solapur | Department of Computer Engineering</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FirePro AI | Shivdatt Vanmane</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="details.css">
+</head>
+<body class="detail-body">
+    <div class="custom-cursor" id="cursor" aria-hidden="true"></div>
+    <div class="loader" aria-hidden="true"><div class="loader-bar" id="loader-bar"></div></div>
+
+    <nav class="detail-nav">
+        <div class="detail-nav-inner">
+            <a href="index.html#work" class="back-link"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+            <a href="index.html#contact" class="nav-cta">Hire Me</a>
+        </div>
+    </nav>
+
+    <header class="detail-hero">
+        <div class="detail-copy">
+            <span class="case-label">01 / AI Surveillance</span>
+            <h1>FirePro AI</h1>
+            <p>
+                An intelligent real-time fire, smoke, and hazard detection system built with Python,
+                Flask, OpenCV, YOLOv8, Firebase, and Socket.IO for smart surveillance workflows.
+            </p>
+            <div class="detail-actions">
+                <a href="fin_rep.pdf" target="_blank" rel="noreferrer" class="primary-action">View Report <i class="fas fa-arrow-up-right-from-square"></i></a>
+                <a href="#gallery" class="ghost-action">View Screens <i class="fas fa-arrow-down"></i></a>
+            </div>
+        </div>
+        <div class="detail-visual">
+            <img src="fire_logo.png" alt="FirePro AI project logo">
+        </div>
+    </header>
+
+    <main class="detail-main">
+        <section class="case-section">
+            <h2>Project Concept</h2>
+            <p>
+                FirePro AI continuously monitors live camera feeds and identifies hazardous events with
+                confidence scores, severity levels, timestamps, captured screenshots, email alerts, event
+                history, Excel exports, and configurable detection settings.
+            </p>
+        </section>
+
+        <section class="case-section case-grid">
+            <article class="case-card glass-panel">
+                <h3>Tech Stack</h3>
+                <ul>
+                    <li>Python and Flask backend</li>
+                    <li>OpenCV video processing</li>
+                    <li>YOLOv8 model inference</li>
+                    <li>Firebase Firestore storage</li>
+                    <li>Socket.IO real-time updates</li>
+                    <li>OpenPyXL Excel reporting</li>
+                </ul>
+            </article>
+            <article class="case-card glass-panel">
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Real-time fire and smoke detection</li>
+                    <li>Human presence monitoring</li>
+                    <li>Automated email notifications</li>
+                    <li>Screenshot evidence capture</li>
+                    <li>Detection history and event logs</li>
+                    <li>Configurable alert cooldowns</li>
+                </ul>
+            </article>
+        </section>
+
+        <section class="case-section" id="gallery">
+            <h2>User Interface Preview</h2>
+            <p class="section-intro">Monitoring screens, alert views, and generated report outputs from the FirePro AI workflow.</p>
+            <div class="gallery-grid">
+                <figure class="gallery-item glass-panel">
+                    <img src="firepro_imgs/login.png" alt="FirePro AI login screen">
+                    <figcaption>Secure admin login</figcaption>
+                </figure>
+                <figure class="gallery-item glass-panel">
+                    <img src="firepro_imgs/dashboard.png" alt="FirePro AI dashboard">
+                    <figcaption>Real-time monitoring dashboard</figcaption>
+                </figure>
+                <figure class="gallery-item glass-panel">
+                    <img src="firepro_imgs/event_logs.png" alt="FirePro AI event logs">
+                    <figcaption>Live event logs</figcaption>
+                </figure>
+                <figure class="gallery-item glass-panel">
+                    <img src="firepro_imgs/email1.jpeg" alt="FirePro AI email alert">
+                    <figcaption>Instant hazard alert</figcaption>
+                </figure>
+                <figure class="gallery-item glass-panel">
+                    <img src="firepro_imgs/xl_history.png" alt="FirePro AI history report">
+                    <figcaption>Detection history export</figcaption>
+                </figure>
+                <figure class="gallery-item glass-panel">
+                    <img src="firepro_imgs/xl_summary.png" alt="FirePro AI summary report">
+                    <figcaption>Excel summary report</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <a href="index.html" class="brand">SV<span>_</span></a>
+        <p>Developed by Shivdatt Vanmane | 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

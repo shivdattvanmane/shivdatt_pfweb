@@ -3,97 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Object Detection Details | Hari Boga</title>
+    <title>CricScore Sport | Shivdatt Vanmane</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="details.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body>
+<body class="detail-body">
+    <div class="custom-cursor" id="cursor" aria-hidden="true"></div>
+    <div class="loader" aria-hidden="true"><div class="loader-bar" id="loader-bar"></div></div>
 
-    <nav>
-        <div class="nav-container">
-            <a href="index.html" class="logo">← Back to Portfolio</a>
+    <nav class="detail-nav">
+        <div class="detail-nav-inner">
+            <a href="index.html#work" class="back-link"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+            <a href="index.html#contact" class="nav-cta">Hire Me</a>
         </div>
     </nav>
 
-    <header class="project-hero">
-        <span class="category-tag">Computer Vision</span>
-        <h1>Object Detection & QR System</h1>
-        <p>A Diploma Project in Computer Engineering focusing on Real-time Analysis</p>
-        
-        <div class="cta-group">
-            <a href="obj_report.pdf" target="_blank" class="btn secondary-outline">
-                <i class="fas fa-file-alt"></i> View Full Report
-            </a>
+    <header class="detail-hero">
+        <div class="detail-copy">
+            <span class="case-label">02 / Web App</span>
+            <h1>CricScore Sport</h1>
+            <p>
+                A real-time cricket scoring web application built for local matches, team creation,
+                player lists, scoreboards, and quick match sharing through Firebase-backed workflows.
+            </p>
+            <div class="detail-actions">
+                <a href="https://cricscoresport01.web.app/" target="_blank" rel="noreferrer" class="primary-action">Launch App <i class="fas fa-arrow-up-right-from-square"></i></a>
+                <a href="How_to_Use_Local_Cricket_App.pdf" target="_blank" rel="noreferrer" class="ghost-action">View Guide <i class="fas fa-file-pdf"></i></a>
+            </div>
+        </div>
+        <div class="detail-visual">
+            <img src="cricscore-preview.jpg" alt="CricScore app preview">
         </div>
     </header>
 
-    <main class="container">
-        
-        <section class="detail-section">
-            <div class="section-header">
-                <h2>Project Methodology</h2>
-                <p>The system follows a specific pipeline: Frame Capture → Pre-processing → Model Inference → Label Overlay.</p>
-            </div>
-            
-            <div class="logic-flow">
-                <div class="logic-card">
-                    <h3>System Architecture</h3>
-                    
-                    <img src="flow.jpg" alt="System Flowchart" class="featured-img">
-                    <p class="caption">Technical logic flow from the project's action plan.</p>
-                </div>
-            </div>
+    <main class="detail-main">
+        <section class="case-section">
+            <h2>Project Concept</h2>
+            <p>
+                CricScore Sport helps local cricket organizers manage match scoring with a digital workflow.
+                It focuses on quick setup, readable score updates, player organization, and a simple experience
+                for users who need live match information without complex tooling.
+            </p>
         </section>
 
-        <section class="detail-section">
-            <div class="section-header">
-                <h2>Execution & Results</h2>
-                <p>Detailed screenshots of the system performing real-time detection and QR decoding.</p>
-            </div>
-
-            <div class="vertical-gallery">
-                <div class="gallery-item-full">
-                    <img src="obj_detectimgs/exec_screen.jpg" alt="Execution Menu">
-                    <div class="overlay-text">Execution & Main Menu Interface</div>
-                </div>
-                
-                <div class="gallery-item-full">
-                    <img src="obj_detectimgs/det_res.jpg" alt="Object Detection Result">
-                    <div class="overlay-text">Real-time Object Detection Result</div>
-                </div>
-
-                <div class="gallery-item-full">
-                    <img src="obj_detectimgs/qr2.jpg" alt="QR Scanning">
-                    <div class="overlay-text">System actively scanning QR code patterns</div>
-                </div>
-
-                <div class="gallery-item-full">
-                    <img src="obj_detectimgs/qr2res.jpg" alt="QR Result">
-                    <div class="overlay-text">Decoded QR Code Output Result</div>
-                </div>
-            </div>
+        <section class="case-section case-grid">
+            <article class="case-card glass-panel">
+                <h3>Tech Stack</h3>
+                <ul>
+                    <li>Flutter web interface</li>
+                    <li>Firebase hosting and database workflows</li>
+                    <li>Real-time match scoring logic</li>
+                    <li>Responsive app screens for local users</li>
+                </ul>
+            </article>
+            <article class="case-card glass-panel">
+                <h3>Key Features</h3>
+                <ul>
+                    <li>Create and manage cricket matches</li>
+                    <li>Maintain player lists and teams</li>
+                    <li>Track scoreboards and match progress</li>
+                    <li>Share live app access with players and viewers</li>
+                </ul>
+            </article>
         </section>
 
-        <section class="detail-section">
-            <div class="card team-card">
-                <h3>Project Team</h3>
-                <div class="team-grid">
-                    <span><strong>Lead:</strong> Shivdatt Vanmane</span>
-                    <span>Hari Boga</span>
-                    <span>Dhanraj Vadisherla</span>
-                    <span>Yadnesh Bhandari</span>
-                    <span>Pankajkumar Yadav</span>
-                </div>
-                <p class="guide"><strong>Under Guidance of:</strong> Prof. Biradar R.Y.</p>
+        <section class="case-section" id="gallery">
+            <h2>App Screens</h2>
+            <p class="section-intro">Screens from the CricScore Sport local cricket app flow.</p>
+            <div class="gallery-grid">
+                <figure class="gallery-item glass-panel">
+                    <img src="cric_imgs/main_scrn.jpeg" alt="CricScore main screen">
+                    <figcaption>Main scoring screen</figcaption>
+                </figure>
+                <figure class="gallery-item glass-panel">
+                    <img src="cric_imgs/create.jpeg" alt="CricScore create match screen">
+                    <figcaption>Create match flow</figcaption>
+                </figure>
+                <figure class="gallery-item glass-panel">
+                    <img src="cric_imgs/code_enter.jpeg" alt="CricScore code entry screen">
+                    <figcaption>Match code entry</figcaption>
+                </figure>
+                <figure class="gallery-item glass-panel">
+                    <img src="cric_imgs/pl_lst.jpeg" alt="CricScore player list screen">
+                    <figcaption>Player list management</figcaption>
+                </figure>
+                <figure class="gallery-item glass-panel">
+                    <img src="cric_imgs/pl_lst2.jpeg" alt="CricScore second player list screen">
+                    <figcaption>Team roster view</figcaption>
+                </figure>
+                <figure class="gallery-item glass-panel">
+                    <img src="cric_imgs/umpire_board.jpeg" alt="CricScore umpire board screen">
+                    <figcaption>Umpire scoring board</figcaption>
+                </figure>
             </div>
         </section>
-
     </main>
 
-    <footer>
-        <p>V.V.P. Polytechnic Solapur | Department of Computer Engineering</p>
+    <footer class="site-footer">
+        <a href="index.html" class="brand">SV<span>_</span></a>
+        <p>CricScore Sport | Local cricket scoring web app</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
