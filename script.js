@@ -79,22 +79,32 @@ function sendForm(formId, url, msgId) {
         message.textContent = "Sending...";
         message.className = "status-msg";
 
+        const formData = new FormData(form);
+        const data = {};
+        formData.forEach((value, key) => {
+            data[key] = value;
+        });
+
         try {
             const response = await fetch(url, {
                 method: "POST",
-                body: new FormData(form),
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(data),
             });
+            const resultText = await response.text();
             if (response.ok) {
-                message.textContent = await response.text();
+                message.textContent = resultText;
                 form.reset();
             } else {
-                throw new Error("Server error");
+                throw new Error(resultText || "Server error");
             }
         } catch (error) {
-            message.textContent = "Unable to submit right now. Please try again later.";
+            message.textContent = error.message || "Unable to submit right now. Please try again later.";
         }
     });
 }
 
-sendForm("feedbackForm", "feedback.php", "feedbackMsg");
-sendForm("hrForm", "hr_request.php", "hrMsg");
+sendForm("feedbackForm", "/api/feedback", "feedbackMsg");
+sendForm("hrForm", "/api/hr_request", "hrMsg");
